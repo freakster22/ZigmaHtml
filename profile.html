@@ -1,0 +1,155 @@
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+   
+function dil(form)
+{
+  for(var i=0; i<4; i++)
+   {
+        if(!isNaN(form.elements[i].value))
+		{
+		   alert("This Field must be Char's")
+		   form.elements[i].value=""	
+		   form.elements[i].focus()
+		   return false
+		}
+   } 
+   
+	if(!isNaN(document.F1.phone.value))
+   {
+	   if(document.F1.phone.value >9999999999 )
+	   {
+		 alert("enter valid phone number")
+		 document.F1.phone.value=""
+		 document.F1.phone.focus()
+         return false   
+	   }
+   }
+   else
+   {
+       alert("This  field  must  be  number")
+	   document.F1.phone.value=""
+	   return false
+   }
+   for(var i=0; i<form.elements.length; i++)
+   {
+		if(form.elements[i].value == "")
+		{
+		   alert("Fill out all Fields")
+		   document.F1.username.focus()
+		   return false
+		}
+   }
+
+   
+
+   return true   
+   }
+</SCRIPT>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Online Banking</title>
+    <!-- Linked Files -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <script type="text/javascript">
+function ctck()
+{
+var sds = document.getElementById("dum");
+
+}
+</script>
+
+</head>
+
+<body style="background-image: url('images/cover_bg.jpg');">
+
+<div id="top_links" >
+  
+
+
+ <header class="header-basic-light">
+        <section id="hvr-grow-shadow">
+        <div class="header-limiter">
+
+		<h1><a href="#">Zigma<span>logo</span></a></h1>
+
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="create1.html">New Customer</a>
+			<a href="#">Services</a>
+			<a href="#">About</a>
+			<a href="#" class="selected">Profile</a>
+			<a href="#">Contact</a>
+            <a href="#" class="logout">Logout</a>
+        </nav>
+	</div>
+            </section>
+</header>
+
+<table style="width:897px; background:#FFFFFF; margin:0 auto;">
+<tr >
+	<td width="300" valign="top" style="border-right:#666666 1px dotted;">
+    	
+	</td>
+    
+    <td width="1200" valign="top">
+    	<div id="welcome" style="border-right: 1px ;"><h1>#USER Profile</h1><br>
+    	    <table  align="center" bgcolor="white">
+		<tr>
+			
+		</tr>
+		<tr>
+			<td>
+				<form name=F1 onSubmit="return dil(this)" action="register.jsp" >
+				  <table cellspacing="5" cellpadding="3">	
+				
+					<tr><td>CRN:</td></tr>
+					
+					<tr><td>CUSTOMER TYPE:</td></tr>
+					<tr><td>NAME:</td></tr>
+					
+					<tr><td>ADDRESS:</td></tr>
+					<tr><td>CONTACT NO:</td></tr>
+					<tr><td>EMAIL ID:</td></tr>
+					
+					
+					
+					</table>
+               		</form>
+			</td>
+		</tr>
+	
+	</table>
+    	         
+    </td>
+             	
+    
+</tr></table>
+    
+<div id="footer_top">
+  <div id="footer_navigation">
+  
+
+  </div>
+  
+  <div id="footer_copyright" >
+ 
+    	    <center><img  alt="business"  width="196" height="106"></center><br>
+		   
+	  
+  Copyright © Your Company Name</div>
+</div>
+
+<script type="text/javascript">
+document.onload = ctck();
+</script>
+</div>
+
+</body>
+</html>
+
