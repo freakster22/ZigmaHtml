@@ -1,0 +1,56 @@
+
+
+    
+
+.con
+{
+width:400px;
+height:400px;
+background-color:white;
+    opacity: 0.75;
+color:red;
+padding:0px 10px 0px 10px;
+margin:auto;
+    border: 1px solid #1E3D51;
+    text-emphasis: bolder;
+    
+}
+.form{
+    
+    
+    font-family: monospace;
+}
+.main
+{
+width:400px;
+height:300px;
+float:left;
+padding:60px 10px 10px10px;
+margin: auto;
+}
+.con1
+{
+width:400px;
+height:300px;
+float:left;
+margin:auto;
+padding:0px 0px 0px0px;
+text-emphasis: bolder;
+}
+.con2
+{
+width:450px;
+height:300px;
+float:left;
+margin:10px 10px 10px10px;
+padding:0px 0px 0px0px;
+}
+/*.form{
+    margin: auto;
+  background-color: #ffffff;
+    font-size: 20px;
+    color: red;
+  border: 1px solid black;
+  
+  filter: alpha(opacity=60); /* For IE8 and earlier 
+}*/
